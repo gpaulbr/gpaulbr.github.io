@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sistema de Senhas de Atendimento</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f8;
+      color: #2c3e50;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      color: #555;
+      margin-bottom: 2rem;
+    }
+
+    .senha {
+      font-size: 8rem;
+      font-weight: bold;
+      background: #2c3e50;
+      color: white;
+      padding: 30px 60px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      margin-bottom: 2rem;
+    }
+
+    .loading {
+      font-size: 1.2rem;
+      color: #666;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .loading::before {
+      content: '';
+      width: 12px;
+      height: 12px;
+      border: 3px solid #999;
+      border-top-color: transparent;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Sistema de Senhas de Atendimento</h1>
+  <h2>PO Mesa de Segurança</h2>
+
+  <div class="senha">064</div>
+
+  <div class="loading">Aguarde a sua ficha ser chamada...</div>
+</body>
+</html>
